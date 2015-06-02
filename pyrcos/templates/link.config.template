@@ -1,0 +1,12 @@
+<link>
+file          = {{ file.name }}
+{% if color is not none %}
+color         = {{ color }}
+{% endif %}
+radius        = {{ radius }}
+bezier_radius = {{ bezier_radius }}r
+thickness     = {{ thickness }}
+ribbon        = {{ "yes" if ribbon else "no" }}
+crest         = {{ crest }}
+bezier_radius_purity = {{ bezier_radius_purity }}
+</link>

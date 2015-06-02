@@ -1,0 +1,37 @@
+<ideogram>
+
+<spacing>
+default = {{ default_spacing }}u
+break   = {{ break_spacing }}u
+</spacing>
+
+# thickness (px) of chromosome ideogram
+thickness        = {{ thickness }}p
+stroke_thickness = {{ stroke_thickness }}
+# ideogram border color
+stroke_color     = {{ stroke_color }}
+fill             = {{ "yes" if fill else "no" }}
+# the default chromosome color is set here and any value
+# defined in the karyotype file overrides it
+fill_color       = {{ fill_color }}
+
+# fractional radius position of chromosome ideogram within image
+radius         = {{ radius }}r
+show_label     = {{ "yes" if show_label else "no" }}
+label_font     = {{ label_font }}
+label_radius   = {{ label_radius }}
+label_size     = {{ label_size }}
+label_parallel = {{ "yes" if label_parallel else "no" }}
+label_case     = {{ label_case }}
+
+# cytogenetic bands
+band_stroke_thickness = {{ band_stroke_thickness }}
+
+# show_bands determines whether the outline of cytogenetic bands
+# will be seen
+show_bands            = {{ show_bands }}
+# in order to fill the bands with the color defined in the karyotype
+# file you must set fill_bands
+fill_bands            = {{ fill_bands }}
+
+</ideogram>

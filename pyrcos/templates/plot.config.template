@@ -1,0 +1,31 @@
+<plot>
+type      = {{ type }}
+file      = {{ file.name }}
+r1        = {{ r1 }}r
+r0        = {{ r0 }}r
+#other attributes
+{% for k, v in attributes.iteritems() %}
+{{ k }} = {{ v }}{% endfor %}
+
+{% if backgrounds|length > 0 %}
+<backgrounds>
+{% for background in backgrounds %}
+{{ background.configuration }}{% endfor %}
+</backgrounds>
+{% endif %}
+
+{% if axes|length > 0 %}
+<axes>
+{% for axis in axes %}
+{{ axis.configuration }}{% endfor %}
+</axes>
+{% endif %}
+
+{% if rules|length > 0 %}
+<rules>
+{% for rule in rules %}
+{{ rule.configuration }}{% endfor %}
+</rules>
+{% endif %}
+
+</plot>

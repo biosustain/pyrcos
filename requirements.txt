@@ -1,0 +1,5 @@
+sympy
+biopython>=1.65
+bokeh>=0.8.2
+jinja2>=2.8
+pint>=0.6

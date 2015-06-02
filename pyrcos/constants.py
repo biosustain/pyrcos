@@ -1,0 +1,2 @@
+DEFAUT_GENE_COLOR = "black"
+DEFAUT_CHR_COLOR = "white"

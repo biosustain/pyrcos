@@ -1,0 +1,8 @@
+<background>
+{% if y0 is not none %}
+y0 = {{ y0 }}r{% endif %}
+{% if y1 is not none %}
+y1 = {{ y1 }}r{% endif %}
+{% if color is not none %}
+color = {{ color }}{% endif %}
+</background>

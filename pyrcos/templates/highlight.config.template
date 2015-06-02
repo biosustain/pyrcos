@@ -1,0 +1,9 @@
+<highlight>
+file = {{ file }}
+r1   = {{ r1 }}
+r0   = {{ r0 }}
+
+{% for k, v in attributes %}}
+{% if v is not none %}
+{{ k }} = {{ v }}
+</highlight>

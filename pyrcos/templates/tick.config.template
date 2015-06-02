@@ -1,0 +1,14 @@
+<tick>
+size           = {{ size }}
+spacing        = {{ spacing }}
+color          = {{ color }}
+show_label     = {{ "yes" if show_label else "no" }}
+label_size     = {{ label_size }}
+format         = {{ format }}
+grid           = {{ "yes" if grid else "no" }}
+grid_color     = {{ grid_color }}
+grid_thickness = {{ grid_thickness }}
+
+{% for radius in radii %}
+radius = {{ radius }}r {% endif %}
+</tick>

@@ -1,0 +1,12 @@
+<rule>
+condition = {{ condition }}
+color     = {{ color }}
+show      = {{ "yes" if show else "no" }}
+flow      = {{ flow }}
+{% if radius1 is not none %}
+radius1   = radius1
+{% endif %}
+{% if radius2 is not none %}
+radius2   = radius2
+{% endif %}
+</rule>

@@ -1,0 +1,49 @@
+{% for i in include %}
+<<include {{i}}>>
+{% endfor %}
+
+{{ ideogram.configuration }}
+
+karyotype = {{ karyotypes|join(',', attribute='filename')}}
+{% if plots|length > 0 %}
+<plots>
+{% for plot in plots %}
+{{ plot.configuration }}
+{% endfor %}
+</plots>
+{% endif %}
+
+{% if ticks|length > 0 %}
+<ticks>
+show_ticks = True
+show_tick_labels = {{ ticks.show_label }}
+{% for tick in ticks %}
+{{ tick.configuration }}
+{% endfor %}
+</ticks>
+{% endif %}
+
+{% if links|length > 0 %}
+<links>
+{% for link in links %}
+{{ link.configuration  }}
+{% endfor %}
+</links>
+{% endif %}
+
+{% if highlights|length > 0 %}
+<highlights>
+{% for highlight in highlights %}
+{{ highlights.configuration  }}
+{% endfor %}
+</highlights>
+{% endif %}
+
+<image>
+<<include etc/image.conf>>
+radius* = {{ radius }}p
+</image>
+
+{% for k, v in attributes.iteritems() %}
+{{ k }} = {{ v }}
+{% endfor %}
