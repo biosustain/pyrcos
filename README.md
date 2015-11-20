@@ -1,6 +1,6 @@
 Pyrcos - Python wrapper for Circos
 ======
-
+[![DOI](https://zenodo.org/badge/19300/biosustain/pyrcos.svg)](https://zenodo.org/badge/latestdoi/19300/biosustain/pyrcos)
 Install
 =======
 
