@@ -5,6 +5,7 @@ Install
 =======
 
 Install circos from [circos.ca](http://circos.ca)
+
 Install pyrcos via pip
 
 
