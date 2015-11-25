@@ -4,7 +4,7 @@ Pyrcos - Python wrapper for Circos
 Install
 =======
 
-Install circos from [http://circos.ca]
+Install circos from [circos.ca](http://circos.ca)
 Install pyrcos via pip
 
 
